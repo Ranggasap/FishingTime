@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct MainView: View {
+    @ObservedObject var motionManager = MotionManager()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Acceleration:")
+            Text("x: \(motionManager.acceleration.x)")
+            Text("y: \(motionManager.acceleration.y)")
+            Text("z: \(motionManager.acceleration.z)")
+           
+            Text("Rotation Rate:")
+            Text("x: \(motionManager.rotationRate.x)")
+            Text("y: \(motionManager.rotationRate.y)")
+            Text("z: \(motionManager.rotationRate.z)")
+           
+        }
+        .onAppear{
+            motionManager.startUpdate()
+        }
+        .onDisappear{
+            motionManager.stopUpdates()
+        }
     }
 }
 
