@@ -17,6 +17,8 @@
 		8B0E2AE52BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AE42BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift */; };
 		8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */; };
 		8B0E2AF82BF35FBC00FB70DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF72BF35FBC00FB70DE /* MainView.swift */; };
+		8B690C422BF49887004B78A2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8B690C412BF49887004B78A2 /* SwiftUICharts */; };
+		8B690C462BF4E898004B78A2 /* MotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B690C452BF4E898004B78A2 /* MotionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,7 @@
 		8B0E2AE42BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTime_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		8B0E2AF72BF35FBC00FB70DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8B690C452BF4E898004B78A2 /* MotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B690C422BF49887004B78A2 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,7 @@
 				8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */,
 				8B0E2AC92BF3547F00FB70DE /* ContentView.swift */,
 				8B0E2AF72BF35FBC00FB70DE /* MainView.swift */,
+				8B690C452BF4E898004B78A2 /* MotionViewModel.swift */,
 				8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */,
 				8B0E2ACB2BF3548000FB70DE /* Assets.xcassets */,
 				8B0E2ACD2BF3548000FB70DE /* Preview Content */,
@@ -190,6 +195,9 @@
 			dependencies = (
 			);
 			name = "FishingTime Watch App";
+			packageProductDependencies = (
+				8B690C412BF49887004B78A2 /* SwiftUICharts */,
+			);
 			productName = "FishingTime Watch App";
 			productReference = 8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 8B0E2AB52BF3547F00FB70DE;
+			packageReferences = (
+				8B690C402BF49887004B78A2 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 8B0E2ABD2BF3547F00FB70DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0E2ACA2BF3547F00FB70DE /* ContentView.swift in Sources */,
+				8B690C462BF4E898004B78A2 /* MotionViewModel.swift in Sources */,
 				8B0E2AF82BF35FBC00FB70DE /* MainView.swift in Sources */,
 				8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */,
 				8B0E2AC82BF3547F00FB70DE /* FishingTimeApp.swift in Sources */,
@@ -701,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B690C402BF49887004B78A2 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B690C412BF49887004B78A2 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B690C402BF49887004B78A2 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B0E2AB62BF3547F00FB70DE /* Project object */;
 }

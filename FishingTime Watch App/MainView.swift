@@ -6,30 +6,39 @@
 //
 
 import SwiftUI
+import SwiftUICharts
+import CoreMotion
+import Combine
 
 struct MainView: View {
-    @ObservedObject var motionManager = MotionManager()
+    @ObservedObject private var viewModel = MotionViewModel()
+    
+    
     var body: some View {
         VStack{
-            Text("Acceleration:")
-            Text("x: \(motionManager.acceleration.x)")
-            Text("y: \(motionManager.acceleration.y)")
-            Text("z: \(motionManager.acceleration.z)")
-           
-            Text("Rotation Rate:")
-            Text("x: \(motionManager.rotationRate.x)")
-            Text("y: \(motionManager.rotationRate.y)")
-            Text("z: \(motionManager.rotationRate.z)")
-           
+            MultiLineChartView(
+                data:
+                    [
+                        (viewModel.x, GradientColors.green),
+                        (viewModel.y, GradientColors.purple),
+                        (viewModel.z, GradientColors.orange)
+                    ],
+                title: "Motion Graph",
+                form: ChartForm.extraLarge,
+                dropShadow: false
+            )
+            .padding(5)
         }
         .onAppear{
-            motionManager.startUpdate()
+            viewModel.startUpdates()
         }
         .onDisappear{
-            motionManager.stopUpdates()
+            viewModel.stopUpdates()
         }
     }
+    
 }
+
 
 #Preview {
     MainView()

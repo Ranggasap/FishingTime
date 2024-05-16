@@ -11,35 +11,20 @@ import Combine
 
 class MotionManager: ObservableObject {
     private var motionManager: CMMotionManager
-    private var timer: Timer?
     
-    @Published var acceleration: CMAcceleration
-    @Published var rotationRate: CMRotationRate
+    @Published var userAcceleration: CMAcceleration = CMAcceleration()
     
     init(){
         self.motionManager = CMMotionManager()
-        self.motionManager.accelerometerUpdateInterval = 0.1
-        self.motionManager.gyroUpdateInterval = 0.1
-        self.acceleration = CMAcceleration(x: 0, y: 0, z: 0)
-        self.rotationRate = CMRotationRate(x: 0, y: 0, z: 0)
+        self.motionManager.deviceMotionUpdateInterval = 0.1
     }
     
     func startUpdate(){
-        if motionManager.isAccelerometerAvailable || motionManager.isGyroAvailable {
-            motionManager.startAccelerometerUpdates()
-            motionManager.startGyroUpdates()
-            motionManager.startDeviceMotionUpdates()
-            
-            timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true){
-                [weak self] _ in
+        if self.motionManager.isDeviceMotionAvailable {
+            self.motionManager.startDeviceMotionUpdates(to: OperationQueue.main){ [weak self] (data, error) in
+                guard let data = data else {return}
                 
-                if let data = self?.motionManager.accelerometerData{
-                    self?.acceleration = data.acceleration
-                }
-                if let data = self?.motionManager.gyroData{
-                    self?.rotationRate = data.rotationRate
-                }
-                
+                self?.userAcceleration = data.userAcceleration
             }
         } else {
             print("Accelerometer or Gyro is not available:")
@@ -50,8 +35,6 @@ class MotionManager: ObservableObject {
     }
     
     func stopUpdates(){
-        motionManager.stopAccelerometerUpdates()
-        motionManager.stopGyroUpdates()
-        timer?.invalidate()
+        motionManager.stopDeviceMotionUpdates()
     }
 }
