@@ -16,7 +16,9 @@
 		8B0E2AE32BF3548100FB70DE /* FishingTime_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AE22BF3548100FB70DE /* FishingTime_Watch_AppUITests.swift */; };
 		8B0E2AE52BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AE42BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift */; };
 		8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */; };
-		8B0E2AF82BF35FBC00FB70DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF72BF35FBC00FB70DE /* MainView.swift */; };
+		8B0E2AF82BF35FBC00FB70DE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */; };
+		8B62EE982BF5E630008F9831 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62EE972BF5E630008F9831 /* HapticView.swift */; };
+		8B62EE9A2BF5EBC8008F9831 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62EE992BF5EBC8008F9831 /* HapticManager.swift */; };
 		8B690C422BF49887004B78A2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8B690C412BF49887004B78A2 /* SwiftUICharts */; };
 		8B690C462BF4E898004B78A2 /* MotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B690C452BF4E898004B78A2 /* MotionViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +74,9 @@
 		8B0E2AE22BF3548100FB70DE /* FishingTime_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTime_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		8B0E2AE42BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTime_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		8B0E2AF72BF35FBC00FB70DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		8B62EE972BF5E630008F9831 /* HapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
+		8B62EE992BF5EBC8008F9831 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		8B690C452BF4E898004B78A2 /* MotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,9 +132,9 @@
 			children = (
 				8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */,
 				8B0E2AC92BF3547F00FB70DE /* ContentView.swift */,
-				8B0E2AF72BF35FBC00FB70DE /* MainView.swift */,
-				8B690C452BF4E898004B78A2 /* MotionViewModel.swift */,
-				8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */,
+				8B62EE942BF5E44D008F9831 /* Managers */,
+				8B62EE932BF5E41F008F9831 /* ViewModels */,
+				8B62EE922BF5E419008F9831 /* Views */,
 				8B0E2ACB2BF3548000FB70DE /* Assets.xcassets */,
 				8B0E2ACD2BF3548000FB70DE /* Preview Content */,
 			);
@@ -160,6 +164,32 @@
 				8B0E2AE42BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "FishingTime Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		8B62EE922BF5E419008F9831 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */,
+				8B62EE972BF5E630008F9831 /* HapticView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B62EE932BF5E41F008F9831 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B690C452BF4E898004B78A2 /* MotionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B62EE942BF5E44D008F9831 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */,
+				8B62EE992BF5EBC8008F9831 /* HapticManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +357,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0E2ACA2BF3547F00FB70DE /* ContentView.swift in Sources */,
+				8B62EE982BF5E630008F9831 /* HapticView.swift in Sources */,
+				8B62EE9A2BF5EBC8008F9831 /* HapticManager.swift in Sources */,
 				8B690C462BF4E898004B78A2 /* MotionViewModel.swift in Sources */,
-				8B0E2AF82BF35FBC00FB70DE /* MainView.swift in Sources */,
+				8B0E2AF82BF35FBC00FB70DE /* GraphView.swift in Sources */,
 				8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */,
 				8B0E2AC82BF3547F00FB70DE /* FishingTimeApp.swift in Sources */,
 			);

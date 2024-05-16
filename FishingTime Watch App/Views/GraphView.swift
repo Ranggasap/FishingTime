@@ -10,7 +10,7 @@ import SwiftUICharts
 import CoreMotion
 import Combine
 
-struct MainView: View {
+struct GraphView: View {
     @ObservedObject private var viewModel = MotionViewModel()
     
     
@@ -41,5 +41,5 @@ struct MainView: View {
 
 
 #Preview {
-    MainView()
+    GraphView()
 }
