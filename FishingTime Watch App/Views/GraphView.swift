@@ -12,7 +12,7 @@ import Combine
 
 struct GraphView: View {
     @ObservedObject private var viewModel = MotionViewModel()
-    
+    @ObservedObject private var pathViewModel = PathViewModel()
     
     var body: some View {
         VStack{
