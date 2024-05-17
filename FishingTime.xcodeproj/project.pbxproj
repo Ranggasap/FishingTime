@@ -18,6 +18,8 @@
 		8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */; };
 		8B0E2AF82BF35FBC00FB70DE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */; };
 		8B15E8F52BF741E200168290 /* BaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15E8F42BF741E200168290 /* BaitView.swift */; };
+		8B15E8F72BF7452700168290 /* FishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15E8F62BF7452700168290 /* FishingView.swift */; };
+		8B15E8FE2BF7506C00168290 /* WaitingFishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B15E8FD2BF7506C00168290 /* WaitingFishViewModel.swift */; };
 		8B62EE982BF5E630008F9831 /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62EE972BF5E630008F9831 /* HapticView.swift */; };
 		8B62EE9A2BF5EBC8008F9831 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62EE992BF5EBC8008F9831 /* HapticManager.swift */; };
 		8B62EE9C2BF5F69E008F9831 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62EE9B2BF5F69E008F9831 /* MainView.swift */; };
@@ -80,6 +82,8 @@
 		8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		8B15E8F42BF741E200168290 /* BaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaitView.swift; sourceTree = "<group>"; };
+		8B15E8F62BF7452700168290 /* FishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingView.swift; sourceTree = "<group>"; };
+		8B15E8FD2BF7506C00168290 /* WaitingFishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingFishViewModel.swift; sourceTree = "<group>"; };
 		8B62EE972BF5E630008F9831 /* HapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
 		8B62EE992BF5EBC8008F9831 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		8B62EE9B2BF5F69E008F9831 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 				8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */,
 				8B62EE9B2BF5F69E008F9831 /* MainView.swift */,
 				8B15E8F42BF741E200168290 /* BaitView.swift */,
+				8B15E8F62BF7452700168290 /* FishingView.swift */,
 				8B62EE972BF5E630008F9831 /* HapticView.swift */,
 			);
 			path = Views;
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				8B690C452BF4E898004B78A2 /* MotionViewModel.swift */,
+				8B15E8FD2BF7506C00168290 /* WaitingFishViewModel.swift */,
 				8B62EEA02BF6026A008F9831 /* PathViewModel.swift */,
 			);
 			path = ViewModels;
@@ -382,7 +388,9 @@
 				8B62EEA12BF6026A008F9831 /* PathViewModel.swift in Sources */,
 				8B62EE9A2BF5EBC8008F9831 /* HapticManager.swift in Sources */,
 				8B690C462BF4E898004B78A2 /* MotionViewModel.swift in Sources */,
+				8B15E8FE2BF7506C00168290 /* WaitingFishViewModel.swift in Sources */,
 				8B0E2AF82BF35FBC00FB70DE /* GraphView.swift in Sources */,
+				8B15E8F72BF7452700168290 /* FishingView.swift in Sources */,
 				8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */,
 				8B62EE9F2BF60175008F9831 /* Player.swift in Sources */,
 				8B15E8F52BF741E200168290 /* BaitView.swift in Sources */,
