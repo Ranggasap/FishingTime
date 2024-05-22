@@ -13,11 +13,25 @@ class MotionViewModel: ObservableObject{
     @Published var y: [Double] = []
     @Published var z: [Double] = []
     
+    @Published var singleX: Double = 0
+    @Published var singleY: Double = 0
+    @Published var singleZ: Double = 0
+    
+    @Published var maxX: Double = 0
+    @Published var maxY: Double = 0
+    @Published var maxZ: Double = 0
+    
+    @Published var isAccelerationHigh: Bool = false
+    
     private let maxDataPoints = 100
     private var cancellables = Set<AnyCancellable>()
     private var motionManager = MotionManager()
     
-    init(){
+    func startUpdates(){
+        motionManager.startUpdate()
+    }
+    
+    func throwingBaitHandler(){
         motionManager.$userAcceleration.receive(on: DispatchQueue.main)
             .sink{
                 [weak self] acceleration in
@@ -31,12 +45,36 @@ class MotionViewModel: ObservableObject{
                     self.y.removeFirst()
                     self.z.removeFirst()
                 }
+                
+                if acceleration.x > self.maxX{
+                    self.maxX = acceleration.x
+                }
+                
+                if acceleration.y > self.maxY{
+                    self.maxY = acceleration.y
+                }
+                
+                if acceleration.z > self.maxZ{
+                    self.maxZ = acceleration.z
+                }
+                
+                self.isAccelerationHigh = acceleration.y > 1.5 || acceleration.z > 1.5
             }
             .store(in: &cancellables)
     }
     
-    func startUpdates(){
-        motionManager.startUpdate()
+    func rollingRodHandler(){
+        motionManager.$userAcceleration.receive(on: DispatchQueue.main)
+            .sink{
+                [weak self] acceleration in
+                guard let self = self else {return}
+                
+                self.singleX = acceleration.x
+                self.singleY = acceleration.y
+                self.singleZ = acceleration.z
+                
+            }
+            .store(in: &cancellables)
     }
     
     func stopUpdates(){

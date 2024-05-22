@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct FishingView: View {
+    
+    @Binding var player: Player
+    @State var isFishOn: Bool = false
+    @State var fish: Fish = Fish()
+    
+    let hapticManager = HapticManager()
+    
     var body: some View {
         VStack{
-            DistanceText(distance: 9.23)
-            WaitingFish()
+            DistanceText(distance: player.maxAccelerationY / 3 + player.maxAccelerationX / 3 + player.maxAccelerationZ / 3)
+            WaitingFish(isFishOn: $isFishOn)
             DistanceImage(distance: 8)
                 .padding(.top, 24)
+        }
+        .onAppear{
+            fish.randomFishPicker()
+            hapticManager.playSound(sound: .start)
+        }
+        .navigationDestination(isPresented: $isFishOn){
+            RollingView(fish: $fish)
+                .navigationBarBackButtonHidden(true)
         }
     }
 }
@@ -58,10 +73,10 @@ struct DistanceImage: View {
     }
 }
 
-
 struct WaitingFish: View {
     
     @StateObject private var viewModel = WaitingFishViewModel()
+    @Binding var isFishOn: Bool
     
     var body: some View {
         HStack{
@@ -75,6 +90,9 @@ struct WaitingFish: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                 viewModel.startAnimation()
             }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+                isFishOn.toggle()
+            }
         }
     }
 }
@@ -82,5 +100,5 @@ struct WaitingFish: View {
 
 
 #Preview {
-    FishingView()
+    FishingView(player: .constant(Player()))
 }

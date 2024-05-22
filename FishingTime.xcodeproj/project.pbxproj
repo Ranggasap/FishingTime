@@ -27,6 +27,8 @@
 		8B62EEA12BF6026A008F9831 /* PathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62EEA02BF6026A008F9831 /* PathViewModel.swift */; };
 		8B63DF362BFAEAFC00DC27AC /* RollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B63DF352BFAEAFC00DC27AC /* RollingView.swift */; };
 		8B63DF382BFAF22300DC27AC /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B63DF372BFAF22300DC27AC /* RewardView.swift */; };
+		8B63DF3A2BFAF64A00DC27AC /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B63DF392BFAF64A00DC27AC /* Fish.swift */; };
+		8B63DF3C2BFAFA7100DC27AC /* TestMaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B63DF3B2BFAFA7100DC27AC /* TestMaxView.swift */; };
 		8B690C422BF49887004B78A2 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8B690C412BF49887004B78A2 /* SwiftUICharts */; };
 		8B690C462BF4E898004B78A2 /* MotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B690C452BF4E898004B78A2 /* MotionViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +95,8 @@
 		8B62EEA02BF6026A008F9831 /* PathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathViewModel.swift; sourceTree = "<group>"; };
 		8B63DF352BFAEAFC00DC27AC /* RollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingView.swift; sourceTree = "<group>"; };
 		8B63DF372BFAF22300DC27AC /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		8B63DF392BFAF64A00DC27AC /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		8B63DF3B2BFAFA7100DC27AC /* TestMaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMaxView.swift; sourceTree = "<group>"; };
 		8B690C452BF4E898004B78A2 /* MotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,7 @@
 				8B62EE9B2BF5F69E008F9831 /* MainView.swift */,
 				8B15E8F42BF741E200168290 /* BaitView.swift */,
 				8B15E8F62BF7452700168290 /* FishingView.swift */,
+				8B63DF3B2BFAFA7100DC27AC /* TestMaxView.swift */,
 				8B63DF352BFAEAFC00DC27AC /* RollingView.swift */,
 				8B63DF372BFAF22300DC27AC /* RewardView.swift */,
 				8B62EE972BF5E630008F9831 /* HapticView.swift */,
@@ -220,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				8B62EE9E2BF60175008F9831 /* Player.swift */,
+				8B63DF392BFAF64A00DC27AC /* Fish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,10 +405,12 @@
 				8B15E8F72BF7452700168290 /* FishingView.swift in Sources */,
 				8B0E2AF62BF3580B00FB70DE /* MotionManager.swift in Sources */,
 				8B63DF362BFAEAFC00DC27AC /* RollingView.swift in Sources */,
+				8B63DF3C2BFAFA7100DC27AC /* TestMaxView.swift in Sources */,
 				8B62EE9F2BF60175008F9831 /* Player.swift in Sources */,
 				8B15E8F52BF741E200168290 /* BaitView.swift in Sources */,
 				8B63DF382BFAF22300DC27AC /* RewardView.swift in Sources */,
 				8B0E2AC82BF3547F00FB70DE /* FishingTimeApp.swift in Sources */,
+				8B63DF3A2BFAF64A00DC27AC /* Fish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

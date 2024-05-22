@@ -28,9 +28,10 @@ struct MainView: View {
                 pathViewModel.addPath(player: Player())
             }
             .navigationDestination(for: Player.self){ player in
-                GraphView()
+                BaitView()
             }
         }
+        .environmentObject(pathViewModel)
         
     }
 }

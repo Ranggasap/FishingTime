@@ -9,14 +9,14 @@ import Foundation
 
 struct Player: Hashable, Identifiable {
     internal var id: UUID
-    private var maxAccelerationX: Double
-    private var maxAccelerationY: Double
-    private var maxAccelerationZ: Double
+    var maxAccelerationX: Double
+    var maxAccelerationY: Double
+    var maxAccelerationZ: Double
     
-    init(){
+    init() {
         self.id = UUID()
-        self.maxAccelerationX = 0
-        self.maxAccelerationY = 0
-        self.maxAccelerationZ = 0
+        self.maxAccelerationX = 0.0
+        self.maxAccelerationY = 0.0
+        self.maxAccelerationZ = 0.0
     }
 }

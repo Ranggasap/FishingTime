@@ -8,26 +8,39 @@
 import SwiftUI
 
 struct RewardView: View {
+    
+    @Binding var fish: Fish
+    
+    let hapticManager = HapticManager()
+    
     var body: some View {
         VStack{
             Text("Congratulation")
                 .font(.title3)
                 .fontWeight(.bold)
-            Image("whale")
+            Image("\(fish.image)")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 75)
-            Text("You've Got Whale")
-            Text("Legendary")
-                .foregroundStyle(.yellow)
+            Text("You've Got \(fish.name)")
+            Text("\(fish.rarity)")
+                .foregroundStyle(fish.color)
             FinishButton()
+        }
+        .onAppear{
+            hapticManager.playSound(sound: .success)
         }
     }
 }
 
 struct FinishButton: View {
+    
+    @EnvironmentObject var pathViewModel: PathViewModel
+    
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            pathViewModel.removeAllPath()
+        }, label: {
             Text("Booyah !!!")
                 .padding()
                 .frame(width: 150)
@@ -40,5 +53,5 @@ struct FinishButton: View {
 
 
 #Preview {
-    RewardView()
+    RewardView(fish: .constant(Fish()))
 }

@@ -27,7 +27,7 @@ struct GraphView: View {
                 form: ChartForm.extraLarge,
                 dropShadow: false
             )
-            .padding(5)
+            
         }
         .onAppear{
             viewModel.startUpdates()

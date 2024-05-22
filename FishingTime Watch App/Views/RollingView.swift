@@ -8,35 +8,45 @@
 import SwiftUI
 
 struct RollingView: View {
+    
+    @Binding var fish: Fish
+    @State var isFishCatched: Bool = false
+    
     var body: some View {
         VStack{
             Text("Fish On !!!")
                 .font(.title3)
                 .fontWeight(.bold)
-                .padding(.top, 24)
-                .padding(.bottom, 16)
-            FishCatchProgress()
+                .padding(.bottom, 8)
+            FishCatchProgress(fish: $fish, isFishCatched: $isFishCatched)
             Text("Roll Your Hand")
                 .font(.headline)
-                .padding(.top, 16)
+                .padding(.top, 8)
         }
-        .ignoresSafeArea()
+        .navigationDestination(isPresented: $isFishCatched){
+            RewardView(fish: $fish)
+                .navigationBarBackButtonHidden(true)
+        }
     }
 }
 
 
 struct FishShape: View {
+    
+    @Binding var fish: Fish
+    
     var body: some View {
         Image(systemName: "fish.fill")
             .resizable()
             .aspectRatio(contentMode: .fit)
+            .foregroundStyle(fish.color)
     }
 }
 
 
 struct CircularProgressBar: View {
     
-    @State var progress: Double = 0.20
+    @Binding var progress: Double
     
     var body: some View {
         ZStack{
@@ -53,20 +63,50 @@ struct CircularProgressBar: View {
 }
 
 struct FishCatchProgress: View {
+    
+    @Binding var fish: Fish
+    @State var progress: Double = 0
+    @State var counter: Double = 0
+    @Binding var isFishCatched: Bool
+    
+    let hapticManager = HapticManager()
+    
+    @ObservedObject private var motionViewModel = MotionViewModel()
+    
     var body: some View {
         VStack {
             ZStack{
-                CircularProgressBar(progress: 0.3)
-                FishShape()
-                    .frame(width: 80)
+                CircularProgressBar(progress: $progress)
+                FishShape(fish: $fish)
+                    .frame(width: 50)
             }
         }
-        .frame(width: 125, height: 125)
+        .frame(width: 80, height: 80)
+        .onAppear{
+            hapticManager.playSound(sound: .retry)
+            motionViewModel.startUpdates()
+            motionViewModel.rollingRodHandler()
+        }
+        .onDisappear{
+            motionViewModel.stopUpdates()
+        }
+        .onChange(of: motionViewModel.singleZ){
+            singleZ in
+            if singleZ > 1{
+                counter += 1
+                progress = counter / Double(fish.power)
+            }
+        }
+        .onChange(of: progress){
+            if Int(progress) >= 1 {
+                isFishCatched = true
+            }
+        }
     }
 }
 
 #Preview {
-    RollingView()
+    RollingView(fish: .constant(Fish()))
 }
 
 
