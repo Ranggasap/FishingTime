@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0689672BFE2443002B586F /* FishPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0689662BFE2443002B586F /* FishPickerManager.swift */; };
 		8B0E2AC32BF3547F00FB70DE /* FishingTime Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B0E2AC82BF3547F00FB70DE /* FishingTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */; };
 		8B0E2ACA2BF3547F00FB70DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AC92BF3547F00FB70DE /* ContentView.swift */; };
@@ -72,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8B0689662BFE2443002B586F /* FishPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPickerManager.swift; sourceTree = "<group>"; };
 		8B0E2ABC2BF3547F00FB70DE /* FishingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FishingTime Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTimeApp.swift; sourceTree = "<group>"; };
@@ -126,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0689652BFDAEB2002B586F /* TestingViews */ = {
+			isa = PBXGroup;
+			children = (
+				8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */,
+				8B63DF3B2BFAFA7100DC27AC /* TestMaxView.swift */,
+				8B62EE972BF5E630008F9831 /* HapticView.swift */,
+			);
+			path = TestingViews;
+			sourceTree = "<group>";
+		};
 		8B0E2AB52BF3547F00FB70DE = {
 			isa = PBXGroup;
 			children = (
@@ -190,14 +202,12 @@
 		8B62EE922BF5E419008F9831 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8B0E2AF72BF35FBC00FB70DE /* GraphView.swift */,
 				8B62EE9B2BF5F69E008F9831 /* MainView.swift */,
 				8B15E8F42BF741E200168290 /* BaitView.swift */,
 				8B15E8F62BF7452700168290 /* FishingView.swift */,
-				8B63DF3B2BFAFA7100DC27AC /* TestMaxView.swift */,
 				8B63DF352BFAEAFC00DC27AC /* RollingView.swift */,
+				8B0689652BFDAEB2002B586F /* TestingViews */,
 				8B63DF372BFAF22300DC27AC /* RewardView.swift */,
-				8B62EE972BF5E630008F9831 /* HapticView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */,
+				8B0689662BFE2443002B586F /* FishPickerManager.swift */,
 				8B62EE992BF5EBC8008F9831 /* HapticManager.swift */,
 			);
 			path = Managers;
@@ -395,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B0E2ACA2BF3547F00FB70DE /* ContentView.swift in Sources */,
+				8B0689672BFE2443002B586F /* FishPickerManager.swift in Sources */,
 				8B62EE9C2BF5F69E008F9831 /* MainView.swift in Sources */,
 				8B62EE982BF5E630008F9831 /* HapticView.swift in Sources */,
 				8B62EEA12BF6026A008F9831 /* PathViewModel.swift in Sources */,

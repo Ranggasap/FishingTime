@@ -21,53 +21,87 @@ struct Fish: Identifiable{
         self.name = "Ikan"
         self.rarity = "Unknown"
         self.color = Color.gray
-        self.image = "whale"
-        self.power = 99
+        self.image = "Carp"
+        self.power = 10
+    }
+    
+    mutating func kraken(){
+        self.name = "Kraken"
+        self.rarity = "Mythical"
+        self.color = Color.red
+        self.image = "Kraken"
+        self.power = 40
     }
     
     mutating func whale(){
         self.name = "Whale"
         self.rarity = "Legendary"
         self.color = Color.yellow
-        self.image = "whale"
-        self.power = 50
+        self.image = "Whale"
+        self.power = 38
+    }
+    
+    mutating func shark(){
+        self.name = "Shark"
+        self.rarity = "Legendary"
+        self.color = Color.yellow
+        self.image = "Shark"
+        self.power = 35
     }
     
     mutating func tuna(){
         self.name = "Tuna"
         self.rarity = "Epic"
         self.color = Color.purple
-        self.image = "whale"
-        self.power = 40
-    }
-    
-    mutating func kakap(){
-        self.name = "Kakap"
-        self.rarity = "Rare"
-        self.color = Color.blue
-        self.image = "whale"
+        self.image = "Tuna"
         self.power = 30
     }
     
-    mutating func tongkol(){
-        self.name = "Tongkol"
-        self.rarity = "Common"
-        self.color = Color.gray
-        self.image = "whale"
+    mutating func kingKrab(){
+        self.name = "King Krab"
+        self.rarity = "Epic"
+        self.color = Color.purple
+        self.image = "Tuna"
+        self.power = 28
+    }
+    
+    mutating func anglerFish(){
+        self.name = "Angler Fish"
+        self.rarity = "Epic"
+        self.color = Color.purple
+        self.image = "Tuna"
+        self.power = 25
+    }
+    
+    mutating func carp(){
+        self.name = "Carp"
+        self.rarity = "Rare"
+        self.color = Color.blue
+        self.image = "Carp"
         self.power = 20
     }
     
-    mutating func randomFishPicker(){
-        let randomInt = Int.random(in: 0..<5)
-        switch randomInt{
-        case 4:
-            whale()
-        case 3:
-            tuna()
-        case 2:
-            kakap()
-        default:
-            tongkol()
-        }
+    mutating func stingRay(){
+        self.name = "Stingray"
+        self.rarity = "Rare"
+        self.color = Color.blue
+        self.image = "StingRay"
+        self.power = 18
+    }
+    
+    mutating func jellyFish(){
+        self.name = "Jelly Fish"
+        self.rarity = "Common"
+        self.color = Color.green
+        self.image = "JellyFish"
+        self.power = 10
+    }
+    
+    mutating func mackarel(){
+        self.name = "Mackarel"
+        self.rarity = "Common"
+        self.color = Color.green
+        self.image = "Mackarel"
+        self.power = 15
     }
 }

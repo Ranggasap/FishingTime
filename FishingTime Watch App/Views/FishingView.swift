@@ -13,6 +13,8 @@ struct FishingView: View {
     @State var isFishOn: Bool = false
     @State var fish: Fish = Fish()
     
+    let fishPickerManager = FishPickerManager()
+    
     let hapticManager = HapticManager()
     
     var body: some View {
@@ -23,7 +25,15 @@ struct FishingView: View {
                 .padding(.top, 24)
         }
         .onAppear{
-            fish.randomFishPicker()
+            let distance = player.maxAccelerationX / 3 + player.maxAccelerationY / 3 + player.maxAccelerationZ / 3
+            if distance > 20 {
+                fish = fishPickerManager.fishPickerLongDistance()
+            } else if distance > 15 {
+                fish = fishPickerManager.fishPickerMidDistance()
+            } else{
+                fish = fishPickerManager.fishPickerLowDistance()
+            }
+            print(fish)
             hapticManager.playSound(sound: .start)
         }
         .navigationDestination(isPresented: $isFishOn){

@@ -19,7 +19,7 @@ struct RollingView: View {
                 .fontWeight(.bold)
                 .padding(.bottom, 8)
             FishCatchProgress(fish: $fish, isFishCatched: $isFishCatched)
-            Text("Roll Your Hand")
+            Text("Roll Your Wrist")
                 .font(.headline)
                 .padding(.top, 8)
         }
@@ -66,7 +66,7 @@ struct FishCatchProgress: View {
     
     @Binding var fish: Fish
     @State var progress: Double = 0
-    @State var counter: Double = 0
+    @State var counter: Int = 0
     @Binding var isFishCatched: Bool
     
     let hapticManager = HapticManager()
@@ -94,7 +94,10 @@ struct FishCatchProgress: View {
             singleZ in
             if singleZ > 1{
                 counter += 1
-                progress = counter / Double(fish.power)
+                if counter % 2 == 0 {
+                    hapticManager.playSound(sound: .directionUp)
+                }
+                progress = Double(counter) / Double(fish.power)
             }
         }
         .onChange(of: progress){

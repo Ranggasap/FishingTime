@@ -58,7 +58,7 @@ class MotionViewModel: ObservableObject{
                     self.maxZ = acceleration.z
                 }
                 
-                self.isAccelerationHigh = acceleration.y > 1.5 || acceleration.z > 1.5
+                self.isAccelerationHigh = acceleration.y > 1.0 || acceleration.z > 1.0
             }
             .store(in: &cancellables)
     }

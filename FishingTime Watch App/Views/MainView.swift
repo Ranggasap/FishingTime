@@ -19,7 +19,6 @@ struct MainView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 100)
-                    .foregroundStyle(.blue)
                 
                 BlinkingText()
             }
