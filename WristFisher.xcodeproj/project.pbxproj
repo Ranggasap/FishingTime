@@ -141,7 +141,7 @@
 		8B0E2AB52BF3547F00FB70DE = {
 			isa = PBXGroup;
 			children = (
-				8B0E2AC62BF3547F00FB70DE /* FishingWatch Watch App */,
+				8B0E2AC62BF3547F00FB70DE /* WristFisher Watch App */,
 				8B0E2AD72BF3548100FB70DE /* WristFisher Watch AppTests */,
 				8B0E2AE12BF3548100FB70DE /* WristFisher Watch AppUITests */,
 				8B0E2ABD2BF3547F00FB70DE /* Products */,
@@ -159,7 +159,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B0E2AC62BF3547F00FB70DE /* FishingWatch Watch App */ = {
+		8B0E2AC62BF3547F00FB70DE /* WristFisher Watch App */ = {
 			isa = PBXGroup;
 			children = (
 				8B0E2AC72BF3547F00FB70DE /* WristFisherApp.swift */,
@@ -171,7 +171,7 @@
 				8B0E2ACB2BF3548000FB70DE /* Assets.xcassets */,
 				8B0E2ACD2BF3548000FB70DE /* Preview Content */,
 			);
-			path = "FishingWatch Watch App";
+			path = "WristFisher Watch App";
 			sourceTree = "<group>";
 		};
 		8B0E2ACD2BF3548000FB70DE /* Preview Content */ = {
