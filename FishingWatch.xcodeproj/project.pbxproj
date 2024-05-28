@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8B0689672BFE2443002B586F /* FishPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0689662BFE2443002B586F /* FishPickerManager.swift */; };
-		8B0E2AC32BF3547F00FB70DE /* FishingTime Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8B0E2AC82BF3547F00FB70DE /* FishingTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */; };
+		8B0E2AC32BF3547F00FB70DE /* FishingWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B0E2AC22BF3547F00FB70DE /* FishingWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B0E2AC82BF3547F00FB70DE /* FishingWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AC72BF3547F00FB70DE /* FishingWatchApp.swift */; };
 		8B0E2ACA2BF3547F00FB70DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0E2AC92BF3547F00FB70DE /* ContentView.swift */; };
 		8B0E2ACC2BF3548000FB70DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0E2ACB2BF3548000FB70DE /* Assets.xcassets */; };
 		8B0E2ACF2BF3548000FB70DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0E2ACE2BF3548000FB70DE /* Preview Assets.xcassets */; };
@@ -65,7 +65,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				8B0E2AC32BF3547F00FB70DE /* FishingTime Watch App.app in Embed Watch Content */,
+				8B0E2AC32BF3547F00FB70DE /* FishingWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,15 +74,15 @@
 
 /* Begin PBXFileReference section */
 		8B0689662BFE2443002B586F /* FishPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishPickerManager.swift; sourceTree = "<group>"; };
-		8B0E2ABC2BF3547F00FB70DE /* FishingTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FishingTime Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTimeApp.swift; sourceTree = "<group>"; };
+		8B0E2ABC2BF3547F00FB70DE /* FishingWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0E2AC22BF3547F00FB70DE /* FishingWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishingWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0E2AC72BF3547F00FB70DE /* FishingWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingWatchApp.swift; sourceTree = "<group>"; };
 		8B0E2AC92BF3547F00FB70DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B0E2ACB2BF3548000FB70DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0E2ACE2BF3548000FB70DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8B0E2AD42BF3548000FB70DE /* FishingTime Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FishingTime Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0E2AD42BF3548000FB70DE /* FishingWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FishingWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0E2AD82BF3548100FB70DE /* FishingTime_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTime_Watch_AppTests.swift; sourceTree = "<group>"; };
-		8B0E2ADE2BF3548100FB70DE /* FishingTime Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FishingTime Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B0E2ADE2BF3548100FB70DE /* FishingWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FishingWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0E2AE22BF3548100FB70DE /* FishingTime_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTime_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		8B0E2AE42BF3548100FB70DE /* FishingTime_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingTime_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8B0E2AF52BF3580B00FB70DE /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		8B0E2AB52BF3547F00FB70DE = {
 			isa = PBXGroup;
 			children = (
-				8B0E2AC62BF3547F00FB70DE /* FishingTime Watch App */,
+				8B0E2AC62BF3547F00FB70DE /* FishingWatch Watch App */,
 				8B0E2AD72BF3548100FB70DE /* FishingTime Watch AppTests */,
 				8B0E2AE12BF3548100FB70DE /* FishingTime Watch AppUITests */,
 				8B0E2ABD2BF3547F00FB70DE /* Products */,
@@ -151,18 +151,18 @@
 		8B0E2ABD2BF3547F00FB70DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B0E2ABC2BF3547F00FB70DE /* FishingTime.app */,
-				8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */,
-				8B0E2AD42BF3548000FB70DE /* FishingTime Watch AppTests.xctest */,
-				8B0E2ADE2BF3548100FB70DE /* FishingTime Watch AppUITests.xctest */,
+				8B0E2ABC2BF3547F00FB70DE /* FishingWatch.app */,
+				8B0E2AC22BF3547F00FB70DE /* FishingWatch.app */,
+				8B0E2AD42BF3548000FB70DE /* FishingWatch Watch AppTests.xctest */,
+				8B0E2ADE2BF3548100FB70DE /* FishingWatch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B0E2AC62BF3547F00FB70DE /* FishingTime Watch App */ = {
+		8B0E2AC62BF3547F00FB70DE /* FishingWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				8B0E2AC72BF3547F00FB70DE /* FishingTimeApp.swift */,
+				8B0E2AC72BF3547F00FB70DE /* FishingWatchApp.swift */,
 				8B0E2AC92BF3547F00FB70DE /* ContentView.swift */,
 				8B62EE9D2BF6016A008F9831 /* Models */,
 				8B62EE942BF5E44D008F9831 /* Managers */,
@@ -171,7 +171,7 @@
 				8B0E2ACB2BF3548000FB70DE /* Assets.xcassets */,
 				8B0E2ACD2BF3548000FB70DE /* Preview Content */,
 			);
-			path = "FishingTime Watch App";
+			path = "FishingWatch Watch App";
 			sourceTree = "<group>";
 		};
 		8B0E2ACD2BF3548000FB70DE /* Preview Content */ = {
@@ -244,9 +244,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B0E2ABB2BF3547F00FB70DE /* FishingTime */ = {
+		8B0E2ABB2BF3547F00FB70DE /* FishingWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B0E2AEC2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime" */;
+			buildConfigurationList = 8B0E2AEC2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch" */;
 			buildPhases = (
 				8B0E2ABA2BF3547F00FB70DE /* Resources */,
 				8B0E2AEB2BF3548100FB70DE /* Embed Watch Content */,
@@ -256,14 +256,14 @@
 			dependencies = (
 				8B0E2AC52BF3547F00FB70DE /* PBXTargetDependency */,
 			);
-			name = FishingTime;
+			name = FishingWatch;
 			productName = FishingTime;
-			productReference = 8B0E2ABC2BF3547F00FB70DE /* FishingTime.app */;
+			productReference = 8B0E2ABC2BF3547F00FB70DE /* FishingWatch.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		8B0E2AC12BF3547F00FB70DE /* FishingTime Watch App */ = {
+		8B0E2AC12BF3547F00FB70DE /* FishingWatch Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B0E2AE82BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime Watch App" */;
+			buildConfigurationList = 8B0E2AE82BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch Watch App" */;
 			buildPhases = (
 				8B0E2ABE2BF3547F00FB70DE /* Sources */,
 				8B0E2ABF2BF3547F00FB70DE /* Frameworks */,
@@ -273,17 +273,17 @@
 			);
 			dependencies = (
 			);
-			name = "FishingTime Watch App";
+			name = "FishingWatch Watch App";
 			packageProductDependencies = (
 				8B690C412BF49887004B78A2 /* SwiftUICharts */,
 			);
 			productName = "FishingTime Watch App";
-			productReference = 8B0E2AC22BF3547F00FB70DE /* FishingTime Watch App.app */;
+			productReference = 8B0E2AC22BF3547F00FB70DE /* FishingWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B0E2AD32BF3548000FB70DE /* FishingTime Watch AppTests */ = {
+		8B0E2AD32BF3548000FB70DE /* FishingWatch Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B0E2AEF2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime Watch AppTests" */;
+			buildConfigurationList = 8B0E2AEF2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch Watch AppTests" */;
 			buildPhases = (
 				8B0E2AD02BF3548000FB70DE /* Sources */,
 				8B0E2AD12BF3548000FB70DE /* Frameworks */,
@@ -294,14 +294,14 @@
 			dependencies = (
 				8B0E2AD62BF3548000FB70DE /* PBXTargetDependency */,
 			);
-			name = "FishingTime Watch AppTests";
+			name = "FishingWatch Watch AppTests";
 			productName = "FishingTime Watch AppTests";
-			productReference = 8B0E2AD42BF3548000FB70DE /* FishingTime Watch AppTests.xctest */;
+			productReference = 8B0E2AD42BF3548000FB70DE /* FishingWatch Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8B0E2ADD2BF3548100FB70DE /* FishingTime Watch AppUITests */ = {
+		8B0E2ADD2BF3548100FB70DE /* FishingWatch Watch AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B0E2AF22BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime Watch AppUITests" */;
+			buildConfigurationList = 8B0E2AF22BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch Watch AppUITests" */;
 			buildPhases = (
 				8B0E2ADA2BF3548100FB70DE /* Sources */,
 				8B0E2ADB2BF3548100FB70DE /* Frameworks */,
@@ -312,9 +312,9 @@
 			dependencies = (
 				8B0E2AE02BF3548100FB70DE /* PBXTargetDependency */,
 			);
-			name = "FishingTime Watch AppUITests";
+			name = "FishingWatch Watch AppUITests";
 			productName = "FishingTime Watch AppUITests";
-			productReference = 8B0E2ADE2BF3548100FB70DE /* FishingTime Watch AppUITests.xctest */;
+			productReference = 8B0E2ADE2BF3548100FB70DE /* FishingWatch Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -343,7 +343,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8B0E2AB92BF3547F00FB70DE /* Build configuration list for PBXProject "FishingTime" */;
+			buildConfigurationList = 8B0E2AB92BF3547F00FB70DE /* Build configuration list for PBXProject "FishingWatch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -359,10 +359,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B0E2ABB2BF3547F00FB70DE /* FishingTime */,
-				8B0E2AC12BF3547F00FB70DE /* FishingTime Watch App */,
-				8B0E2AD32BF3548000FB70DE /* FishingTime Watch AppTests */,
-				8B0E2ADD2BF3548100FB70DE /* FishingTime Watch AppUITests */,
+				8B0E2ABB2BF3547F00FB70DE /* FishingWatch */,
+				8B0E2AC12BF3547F00FB70DE /* FishingWatch Watch App */,
+				8B0E2AD32BF3548000FB70DE /* FishingWatch Watch AppTests */,
+				8B0E2ADD2BF3548100FB70DE /* FishingWatch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,7 +421,7 @@
 				8B62EE9F2BF60175008F9831 /* Player.swift in Sources */,
 				8B15E8F52BF741E200168290 /* BaitView.swift in Sources */,
 				8B63DF382BFAF22300DC27AC /* RewardView.swift in Sources */,
-				8B0E2AC82BF3547F00FB70DE /* FishingTimeApp.swift in Sources */,
+				8B0E2AC82BF3547F00FB70DE /* FishingWatchApp.swift in Sources */,
 				8B63DF3A2BFAF64A00DC27AC /* Fish.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,17 +448,17 @@
 /* Begin PBXTargetDependency section */
 		8B0E2AC52BF3547F00FB70DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B0E2AC12BF3547F00FB70DE /* FishingTime Watch App */;
+			target = 8B0E2AC12BF3547F00FB70DE /* FishingWatch Watch App */;
 			targetProxy = 8B0E2AC42BF3547F00FB70DE /* PBXContainerItemProxy */;
 		};
 		8B0E2AD62BF3548000FB70DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B0E2AC12BF3547F00FB70DE /* FishingTime Watch App */;
+			target = 8B0E2AC12BF3547F00FB70DE /* FishingWatch Watch App */;
 			targetProxy = 8B0E2AD52BF3548000FB70DE /* PBXContainerItemProxy */;
 		};
 		8B0E2AE02BF3548100FB70DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B0E2AC12BF3547F00FB70DE /* FishingTime Watch App */;
+			target = 8B0E2AC12BF3547F00FB70DE /* FishingWatch Watch App */;
 			targetProxy = 8B0E2ADF2BF3548100FB70DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -585,11 +585,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FishingTime Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FishingWatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = NNX37468Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = FishingTime;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -597,8 +596,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ranggasaputra.FishingTime.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranggasaputra.FishingWatch.watchkitapp;
+				PRODUCT_NAME = FishingWatch;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -615,11 +614,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FishingTime Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FishingWatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = NNX37468Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = FishingTime;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -627,8 +625,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ranggasaputra.FishingTime.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranggasaputra.FishingWatch.watchkitapp;
+				PRODUCT_NAME = FishingWatch;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -646,7 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NNX37468Q3;
-				INFOPLIST_KEY_CFBundleDisplayName = FishingTime;
+				INFOPLIST_KEY_CFBundleDisplayName = FishingWatch;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranggasaputra.FishingTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,7 +660,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NNX37468Q3;
-				INFOPLIST_KEY_CFBundleDisplayName = FishingTime;
+				INFOPLIST_KEY_CFBundleDisplayName = FishingWatch;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ranggasaputra.FishingTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -688,7 +686,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishingTime Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FishingTime Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishingWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FishingWatch Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 10.4;
 			};
 			name = Debug;
@@ -709,7 +707,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishingTime Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FishingTime Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishingWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FishingWatch Watch App";
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 10.4;
 			};
@@ -759,7 +757,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B0E2AB92BF3547F00FB70DE /* Build configuration list for PBXProject "FishingTime" */ = {
+		8B0E2AB92BF3547F00FB70DE /* Build configuration list for PBXProject "FishingWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B0E2AE62BF3548100FB70DE /* Debug */,
@@ -768,7 +766,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B0E2AE82BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime Watch App" */ = {
+		8B0E2AE82BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B0E2AE92BF3548100FB70DE /* Debug */,
@@ -777,7 +775,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B0E2AEC2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime" */ = {
+		8B0E2AEC2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B0E2AED2BF3548100FB70DE /* Debug */,
@@ -786,7 +784,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B0E2AEF2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime Watch AppTests" */ = {
+		8B0E2AEF2BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B0E2AF02BF3548100FB70DE /* Debug */,
@@ -795,7 +793,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B0E2AF22BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingTime Watch AppUITests" */ = {
+		8B0E2AF22BF3548100FB70DE /* Build configuration list for PBXNativeTarget "FishingWatch Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B0E2AF32BF3548100FB70DE /* Debug */,

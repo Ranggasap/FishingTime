@@ -18,10 +18,10 @@ struct Fish: Identifiable{
     
     init() {
         self.id = UUID()
-        self.name = "Ikan"
-        self.rarity = "Unknown"
-        self.color = Color.gray
-        self.image = "Carp"
+        self.name = "Kraken"
+        self.rarity = "Mythical"
+        self.color = Color.red
+        self.image = "Kraken"
         self.power = 10
     }
     
